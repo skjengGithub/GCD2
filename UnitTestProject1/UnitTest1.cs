@@ -7,8 +7,12 @@ namespace UnitTestProject1
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TestScenario_1()
         {
+            int x = 3;
+            int y = 5;
+            Program.Swap(ref x, ref y);
+            Assert.IsTrue(x == 5 && y == 3);
         }
     }
 }
